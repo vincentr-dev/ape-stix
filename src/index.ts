@@ -1,5 +1,6 @@
 import * as $ from 'jquery';
-import './css/style.css';
+import './css/global.scss';
+import './scripts/component.ts';
 
 console.log('hell');
 $('body').append('<p class="hello">Banana Yumm!</p>');

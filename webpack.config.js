@@ -20,6 +20,20 @@ module.exports = {
                     'css-loader'
                 ]
             },
+            {
+                test: /\.(png|svg|jpg|gif)/,
+                use: [
+                    'file-loader'
+                ]
+            },
+            {
+                test: /\.s[ac]ss/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ]
+            },
         ]
     },
     resolve: {
