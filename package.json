@@ -5,8 +5,9 @@
   "private:": "true",
   "main": "index.ts",
   "scripts": {
-    "build": "node node_modules/webpack-cli",
-    "watch": "node node_modules/webpack-cli --watch",
+    "server": "npx ts-node --project ./server/tsconfig.json server/index.ts",
+    "build": "npx webpack-cli --mode development",
+    "watch": "npx webpack-cli --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,6 +21,10 @@
   "author": "vincent.v.romero@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.6",
+    "css-loader": "^3.6.0",
+    "express": "^4.17.1",
+    "style-loader": "^1.2.1",
     "ts-loader": "^7.0.5",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.6",
