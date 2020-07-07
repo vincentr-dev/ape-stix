@@ -36,7 +36,7 @@ Uses webpack to bundle resources using webpack available loader. Default setup i
     OR, you can run a separate Express server along-side the *watcher* service to preview your changes with hot-reload.
 
         # run webpack in watch mode, and Express concurrently
-        npm run server
+        npm start
 
 
 ### tips
